@@ -1279,6 +1279,9 @@ label {
 @media (max-width: 768px) {
   .btn {
     font-size: 20px;
+    background: var(--blue);
+    color: #000;
+    box-shadow: 0 20px 30px 0 rgba(117, 251, 253, 0.2);
   }
 }
 .btn:hover, .btn:active {
@@ -1396,7 +1399,7 @@ section {
     margin: 0 auto;
     top: 0;
     width: 140px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1439,7 +1442,7 @@ section {
 }
 @media (max-width: 768px) {
   .man {
-    width: 300px;
+    width: 240px;
     max-width: 80%;
   }
 }
@@ -1468,7 +1471,7 @@ section {
 }
 @media (max-width: 768px) {
   .sign {
-    width: 300px;
+    width: 240px;
     max-width: 80%;
   }
 }
@@ -1493,6 +1496,11 @@ section {
 .stage__btn {
   text-align: center;
   margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .stage__btn {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1524,9 +1532,6 @@ section {
 }
 @media (max-width: 768px) {
   .stage__link {
-    position: relative;
-    right: initial !important;
-    top: initial !important;
     font-size: 18px;
   }
 }
@@ -1554,6 +1559,12 @@ section {
     right: 80px;
   }
 }
+@media (max-width: 768px) {
+  .stage__link--game {
+    right: 10px;
+    top: 80px;
+  }
+}
 
 .stage__link--focus {
   text-align: right;
@@ -1572,12 +1583,8 @@ section {
 }
 @media (max-width: 768px) {
   .stage__link--focus {
-    text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  .stage__link--focus br {
-    display: none;
+    right: 10px;
+    top: 430px;
   }
 }
 
@@ -1618,9 +1625,10 @@ section {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-right: 0;
     padding-bottom: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
 .stage_bottom a {
