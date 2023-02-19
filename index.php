@@ -48,7 +48,7 @@
 				<img src="/img/logo.png" srcset="/img/logo@2x.png 2x" alt="logo" class="logo">
 				<div class="stage__main">
 					<div id="stage__particles" class="stage__particles"></div>
-					<img src="/img/man.png" srcset="/img/man@2x.png 2x" alt="man" class="man has-move">
+					<img src="/img/man.png" srcset="/img/man@2x.png 2x" alt="man" class="man">
 					<img src="/img/sign.png" alt="sign" class="sign">
 				</div>
 				<div class="stage__btn">
