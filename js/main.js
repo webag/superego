@@ -190,3 +190,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	initParallax();
 })
 /* Parallax End */
+
+
+/* Pop Begin */
+document.addEventListener("DOMContentLoaded", function() {
+	const link = document.querySelector('.stage__link--focus');
+	const pop = document.querySelector('.stage__pop');
+
+	link.addEventListener('click', () => {
+		pop.classList.toggle('active');
+	})
+})
+/* Pop End */
