@@ -1,0 +1,228 @@
+section {
+	--size: calc(1vw + 1vh);
+}
+
+.container {}
+
+.logo {
+	width: calc(var(--size) * 9.4);
+	max-width: 200px;
+	height: auto;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 10;
+
+	@include res(m) {
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		top: 0;
+		width: 140px;
+		margin-bottom: 20px;
+	}
+}
+
+
+.stage {
+	position: relative;
+	height: 100vh;
+	padding-top: 20px;
+	--mouse-x: 0;
+	--mouse-y: 0;
+
+	@include res(m) {
+		height: initial;
+	}
+}
+
+.stage__main {
+	position: relative;
+}
+
+.man {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 5;
+	width: calc(var(--size) * 20.2);
+	max-width: 407px;
+	height: auto;
+	pointer-events: none;
+	transform: translate3d(calc(var(--mouse-x) * -0.5),calc(var(--mouse-y) * -0.5),0);
+	transition: all 3s cubic-bezier(0.05, 0.5, 0, 1);
+	will-change: transform;
+
+	@include res(xl) {
+		width: calc(var(--size) * 15.2);
+	}
+
+	@include res(m) {
+		width: 300px;
+		max-width: 80%;
+	}
+}
+
+.sign {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 2;
+	pointer-events: none;
+	width: calc(var(--size) * 20.2);
+	max-width: 395px;
+	height: auto;
+	transform: translate3d(calc(var(--mouse-x) * 0.2),calc(var(--mouse-y) * 0.2),0);
+	transition: all 3s cubic-bezier(0.05, 0.5, 0, 1);
+	will-change: transform;
+
+	@include res(xl) {
+		width: calc(var(--size) * 15.2);
+	}
+
+	@include res(m) {
+		width: 300px;
+		max-width: 80%;
+	}
+}
+
+.stage__particles {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	margin: auto;
+	width: 60%;
+	height: 100%;
+	@include res(m) {
+		width: 100%;
+	}
+}
+
+.stage__btn {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.stage__links {
+	@include res(m) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		padding-top: 30px;
+	}
+}
+
+.stage__link {
+	position: absolute;
+	z-index: 10;
+	font-size: 30px;
+	line-height: 1.25;
+
+	@include res(xl) {
+		font-size: 24px;
+	}
+
+	@include res(m) {
+		position: relative;
+		right: initial !important;
+		top: initial !important;
+		font-size: 18px;
+	}
+
+	span {
+		border-bottom: 1px solid rgba(#FFF, 0.5);
+		transition: all 0.3s ease;
+	}
+
+	&:hover {
+		span {
+			border-bottom: 1px solid rgba(#FFF, 1);
+		}
+	}
+}
+
+.stage__link--game {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3em;
+	top: 100px;
+	right: 140px;
+
+	@include res(xls) {
+		right: 80px;
+	}
+}
+
+.stage__link--focus {
+	text-align: right;
+	top: 440px;
+	right: 66px;
+
+	@include res(xl) {
+		top: 360px;
+	}
+
+	@include res(xls) {
+		right: 20px;
+	}
+
+	@include res(m) {
+		text-align: center;
+	}
+
+	br {
+		@include res(m) {
+			display: none;
+		}
+	}
+}
+
+.stage_bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 0.8em;
+	line-height: 1.25;
+	position: absolute;
+	z-index: 10;
+	bottom: 0;
+	left: 0;
+	width: 25%;
+	border-right: 1px solid rgba(#FFF, 0.4);
+	padding-right: 26px;
+	padding-bottom: 70px;
+	text-align: right;
+
+	@include res(xl) {
+		padding-bottom: 24px;
+		font-size: 14px;
+	}
+
+	@include res(m) {
+		position: relative;
+		width: 100%;
+		border-right: 0px;
+		align-items: center;
+		text-align: center;
+		padding-top: 40px;
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+
+	a {
+		color: rgba(#FFF, 0.3);
+		transition: color 0.3s ease;
+
+		&:hover, &:active {
+			color: rgba(#FFF, 1);
+		}
+	}
+}
