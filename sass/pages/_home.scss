@@ -110,16 +110,7 @@ section {
 	margin-top: 20px;
 	@include res(m) {
 		margin-top: 60px;
-	}
-}
-
-.stage__links {
-	@include res(m) {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 20px;
-		padding-top: 30px;
+		margin-bottom: 40px;
 	}
 }
 
@@ -211,10 +202,10 @@ section {
 		border-right: 0px;
 		align-items: center;
 		text-align: center;
-		padding-top: 20px;
+		padding-top: 30px;
 		padding-right: 0;
 		padding-bottom: 30px;
-		border-top: 1px solid rgba(#FFF, 0.2);
+		border-top: 1px solid rgba(#FFF, 0.15);
 	}
 
 	a {

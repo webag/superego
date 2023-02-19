@@ -1500,22 +1500,7 @@ section {
 @media (max-width: 768px) {
   .stage__btn {
     margin-top: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  .stage__links {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 20px;
-    padding-top: 30px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1625,10 +1610,10 @@ section {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-right: 0;
     padding-bottom: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
   }
 }
 .stage_bottom a {
